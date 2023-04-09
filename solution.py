@@ -8,6 +8,6 @@ chat_id = 1374771107 # Ваш chat ID, не меняйте название пе
 
 def solution(x, y) -> bool: 
   
-  alpha = 0.05
+  alpha = 0.03
   ps = stats.mannwhitneyu(x, y).pvalue
   return ps < alpha
